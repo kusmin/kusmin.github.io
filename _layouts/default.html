@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="/static/layout.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }} {% endif %}</h1>
+            {{ content }}
+        </div>
+    </main>
+</body>
+</html>
